@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceGame </title>
+    <link rel="stylesheet" href="/style/style.css">
+        <script src="main.js"></script>
+        
+</head>
+<body>
+
+   <div class="dice">
+        <div class="wrapper">
+            <h1 class="text1">Higher or Lower</h1>
+            <h2 class="text2">Is my number Higher OR Lower </h2>
+            <p class="paragraph">Range 1-6</p>
+            <h3 class="text-field"></h3>
+            <h2 class="dice-title">DICE GAME</h2>
+
+        </div>
+            <div class="row">
+                <h3 class="text-left"><span class="myname"></span></h3>
+                <div class="left">
+                    <div class="col-6">
+                        <img src="images/dice-1.png" alt="dice" class="img-dice">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/dice-1.png" alt="dice" class="img-dice">
+                    </div>
+                </div>
+                    <h3 class="text-right">Computer</h3>
+                    <div class="right">
+                        <div class="col-6">
+                            <img src="images/dice-1.png" alt="dice" class="img-dice">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/dice-1.png" alt="dice" class="img-dice">
+                        </div>
+                     </div>
+            </div>
+            <div class="button-wrapper">
+                <button id="dice-btn" onclick="higher()">HIGHER </button>
+                <button id="dice-btn" onclick="lower()">LOWER </button>
+
+           </div>
+            <div class="button-wrapper2">
+                 <button class="btn-reset" value="Play Againe" onclick="reset()">Reset</button>
+
+            </div>
+
+            <div class="score-wrapper">
+                <div class="score-user">Score: <span class="got-user">  </span>From: 10 <span class="total"></span></div>
+                <div class="score-com">Score: <span class="got-com">  </span>From: 10 <span class="total"></span></div>
+                <div class="finish"></div>
+            </div>
+
+   </div>
+    
+</body>
+</html>
