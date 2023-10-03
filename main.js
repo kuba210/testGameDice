@@ -1,6 +1,8 @@
 
 
 const dice = document.querySelector('.dice-btn');
+let myName = prompt("What is your name?");
+document.querySelector(".myname").innerHTML = myName;
 
 document.querySelector('.name')
 let playerScore = 0;
@@ -53,7 +55,14 @@ function higher(){
     computerScore++;
     document.querySelector(".got-com").innerHTML=computerScore;
 } 
-
+if(computerScore == totalScore){
+  alert("you lose");
+  reset();
+  }
+  else if (playerScore == totalScore){
+    alert("you win")
+    reset();
+  }
 }
 
 
@@ -104,9 +113,25 @@ function lower(){
 console.log("this is the computerGuess "+computerGuess);
 console.log("this is the playerGuess "+playerGuess);
 
+if(computerScore === totalScore){
+  alert("you lose");
+  reset();
+  }
+  else if (playerScore === totalScore){
+    alert("you win")
+    reset();
+  }
 
 }
 
 function reset() {
     window.location.reload();
 }
+
+// function score(){
+//   const total = 10;
+
+//   if (playerScore == total){
+  
+//   }
+// }
