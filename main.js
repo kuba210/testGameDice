@@ -1,8 +1,8 @@
 
 
 const dice = document.querySelector('.dice-btn');
-let myName = prompt("What is your name?");
-document.querySelector(".myname").innerHTML = myName;
+// let myName = prompt("What is your name?");
+// document.querySelector(".myname").innerHTML = myName;
 
 document.querySelector('.name')
 let playerScore = 0;
