@@ -1,0 +1,124 @@
+/* Selecteer alle HTML-elementen en reset de tussen ruimtes naar 0
+Zie universele selector op Pagina 212 */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Selecteer de body element en geef het de achtergrond kleur aliceblue
+zie typeselector op Pagina 211 */
+body {
+    background-color: aliceblue;
+}
+
+
+/* Selecter de header element welke direct onder de body zit met een kindselector 
+geef het de achtergrond kleur darkgoldenrod en als text-kleur wheat 
+geef de header een padding van 10px */
+
+body > header{
+        display: block;
+        background-color: darkgoldenrod;
+        color: wheat;
+        padding: 10px;
+    }
+
+/* Selecteer de h1-element en verander de lettertype naar monospace
+verander óók lettergrootte met font-size */
+h1 {
+    font-family: monospace;
+    font-size: medium;
+}
+
+/* Selecteer headings h2 t/m h6 en geef het de lettertype monospace; */
+h2, h3, h4, h5, h6{
+    font-family: monospace;
+}
+
+/* selecteer alle P-elementen en geef het de lettertype segoe UI */
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selecteer alle headings, paragraven en article's 
+en geef het 10px margin en padding.
+(zie pagina 220) */
+
+head, p, article{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* selecteer de nav-element met de klasse links en voeg daar de volgende 
+css aan toe 
+    border:2px solid black;
+    text-align: center;*/
+nav.links {
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* selecteer alle a-elementen in de nav met de klasse links en 
+geef het een donkerachtergrond kleur en een lichte tekstkleur. en een unieke lettertype.
+Gebruik hiervoor de combinatieselector: Algemene afstamming: spatie. (Zie pagina 220)
+ */
+
+ .links a {
+    background-color: black;
+    color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+ /* Selecteer alle headers in een article. geef het een breedte van 400px, een rechter border van 100px solid green, en een border-radius van 50%
+ Zie kindselector (pagina 221) */
+
+  article header{
+    width: 400px;
+    border-right: 100px solid green;
+    border-radius: 50%;
+
+ }
+ 
+
+ /* Selecteer alle img-tags en geef deze een breedte van 110px. */
+img{
+    width: 110px;
+}
+
+
+ /* Selecteer alle img tags met lege alt teksten en geef het een dikke rode omranding 
+ (zie attribuutselector op p214 */
+
+img[alt=""] {
+    border:5px solid red;
+}
+
+
+/* Selecteer alle even list-items en maak de achtergrond kleur lichtgrijs 
+Gebruik daarvoor een pseudoklassen (zie pagian 218) */
+li:nth-child(even){
+    background-color: gray;
+
+}
+
+/* Selecteer alle oneven list-items en maak de achtergrond kleur nog lichter grijs
+Gebruik daarvoor een pseudoklassen (zie pagian 218) */
+li:nth-child(odd){
+    background: lightgrey
+}
+
+/* Selecteer de allereerste article en centreer de tekst */
+
+article:nth-child(1){
+    text-align: center;
+}
+
+/* Selecteer alle articles behalve de eerste en geef het een rechter groene border van 10px, een marge aan de onderkant van 100px en een padding aan de linkerkant van 100px;
+Gebruik hiervoor de combinatieselector aangrenzend (zie pagina 221) */
+
+article + article {
+    border-right: 10px solid green;
+    margin-bottom: 100px;
+    padding-left: 100px;
+  }
